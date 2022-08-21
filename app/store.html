@@ -1,0 +1,269 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section
+  class="mt-12 pb-10 pt-6 md:mt-0 md:pt-8 md:pb-14 lg:pt-[3.75rem] lg:pb-20"
+>
+  <div class="container">
+    <h2
+      class="lg:mb-15 mb-6 border-l-8 border-maroon pl-4 text-2xl font-bold md:mb-10 md:text-5xl"
+    >
+      門市據點
+    </h2>
+    <div class="mb-8 grid gap-x-[1.875rem] md:grid-cols-12">
+      <div class="md:col-span-6 lg:col-span-5">
+        <div class="flex items-center text-sm md:text-base">
+          <label class="mr-3 md:mr-5 lg:text-2xl" for="area">選擇地區</label>
+          <select
+            class="flex-auto border-[#CED4DA] focus:border-maroon-dark focus:ring-maroon-dark lg:text-lg"
+            id="area"
+            name="area"
+          >
+            <option selected="selected">全部</option>
+            <option value="TPE">台北</option>
+            <option value="TXG">台中</option>
+            <option value="KHH">高雄</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <ul
+      class="grid gap-x-[1.875rem] gap-y-4 md:grid-cols-2 md:gap-y-5 lg:grid-cols-3 lg:gap-y-8"
+    >
+      <li class="flex flex-col border border-[#DEE2E6]">
+        <img
+          class="h-[10.25rem] object-cover lg:h-56"
+          src="./assets/images/store-1.png"
+          alt="store-1-img"
+        />
+        <h3
+          class="border-b border-b-[#00000020] py-2 pl-6 font-bold lg:py-3 lg:text-2xl lg:font-normal"
+        >
+          台北中山旗艦店
+        </h3>
+        <ul class="grid gap-y-2 py-4 pl-6">
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              call
+            </span>
+            <p class="text-sm lg:text-xl">電話：(02)000-1234</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined text:sm mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              schedule
+            </span>
+            <p class="text-sm lg:text-xl">營業時間：10:00-21:00</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              location_on
+            </span>
+            <p class="text-sm lg:text-xl">
+              地址：台北市中山區南京東路25巷2-1號
+            </p>
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-center text-sm text-white hover:text-maroon lg:py-5 lg:text-xl"
+          href="./store-detail.html"
+        >
+          詳細資訊</a
+        >
+      </li>
+      <li class="flex flex-col border border-[#DEE2E6]">
+        <img
+          class="h-[10.25rem] object-cover lg:h-56"
+          src="./assets/images/store-2.png"
+          alt="store-2-img"
+        />
+        <h3
+          class="border-b border-b-[#00000020] py-2 pl-6 font-bold lg:py-3 lg:text-2xl lg:font-normal"
+        >
+          台北綠園店
+        </h3>
+        <ul class="grid gap-y-2 py-4 pl-6">
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              call
+            </span>
+            <p class="text-sm lg:text-xl">電話：(02)000-2345</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined text:sm mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              schedule
+            </span>
+            <p class="text-sm lg:text-xl">營業時間：10:00-21:00</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              location_on
+            </span>
+            <p class="text-sm lg:text-xl">
+              地址：台北市中正區復興南路 132-1 號
+            </p>
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-center text-sm text-white hover:text-maroon lg:py-5 lg:text-xl"
+          href="./store-detail.html"
+        >
+          詳細資訊</a
+        >
+      </li>
+      <li class="flex flex-col border border-[#DEE2E6]">
+        <img
+          class="h-[10.25rem] object-cover lg:h-56"
+          src="./assets/images/store-3.png"
+          alt="store-3-img"
+        />
+        <h3
+          class="border-b border-b-[#00000020] py-2 pl-6 font-bold lg:py-3 lg:text-2xl lg:font-normal"
+        >
+          台中清水旗艦店
+        </h3>
+        <ul class="grid gap-y-2 py-4 pl-6">
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              call
+            </span>
+            <p class="text-sm lg:text-xl">電話：(02)000-1234</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined text:sm mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              schedule
+            </span>
+            <p class="text-sm lg:text-xl">營業時間：10:00-21:00</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              location_on
+            </span>
+            <p class="text-sm lg:text-xl">
+              地址：台中市清水區經南一路 23 號 8 樓
+            </p>
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-center text-sm text-white hover:text-maroon lg:py-5 lg:text-xl"
+          href="./store-detail.html"
+        >
+          詳細資訊</a
+        >
+      </li>
+      <li class="flex flex-col border border-[#DEE2E6]">
+        <img
+          class="h-[10.25rem] object-cover lg:h-56"
+          src="./assets/images/store-4.png"
+          alt="store-4-img"
+        />
+        <h3
+          class="border-b border-b-[#00000020] py-2 pl-6 font-bold lg:py-3 lg:text-2xl lg:font-normal"
+        >
+          高雄中正形象店
+        </h3>
+        <ul class="grid gap-y-2 py-4 pl-6">
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              call
+            </span>
+            <p class="text-sm lg:text-xl">電話：(07)000-2345</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined text:sm mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              schedule
+            </span>
+            <p class="text-sm lg:text-xl">營業時間：10:00-21:00</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              location_on
+            </span>
+            <p class="text-sm lg:text-xl">
+              地址：高雄市苓雅區中正路 38 號 12 樓
+            </p>
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-center text-sm text-white hover:text-maroon lg:py-5 lg:text-xl"
+          href="./store-detail.html"
+        >
+          詳細資訊</a
+        >
+      </li>
+      <li class="flex flex-col border border-[#DEE2E6]">
+        <img
+          class="h-[10.25rem] object-cover lg:h-56"
+          src="./assets/images/store-5.png"
+          alt="store-5-img"
+        />
+        <h3
+          class="border-b border-b-[#00000020] py-2 pl-6 font-bold lg:py-3 lg:text-2xl lg:font-normal"
+        >
+          高雄夢時代店
+        </h3>
+        <ul class="grid gap-y-2 py-4 pl-6">
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              call
+            </span>
+            <p class="text-sm lg:text-xl">電話：(07)000-1234</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined text:sm mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              schedule
+            </span>
+            <p class="text-sm lg:text-xl">營業時間：10:00-21:00</p>
+          </li>
+          <li class="flex">
+            <span
+              class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+            >
+              location_on
+            </span>
+            <p class="text-sm lg:text-xl">
+              地址：高雄市前鎮區中華一路 63 號 6 樓
+            </p>
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-center text-sm text-white hover:text-maroon lg:py-5 lg:text-xl"
+          href="./store-detail.html"
+        >
+          詳細資訊</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
