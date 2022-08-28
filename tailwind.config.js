@@ -10,13 +10,13 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: "0.9375rem",
-        md: "2.4375rem",
+        md: "2.25rem",
         lg: "0rem",
       },
     },
     screens: {
       md: "768px",
-      lg: "1110px", //lg: "1296px"
+      lg: "1296px",
     },
     fontFamily: {
       sans: [

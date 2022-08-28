@@ -37,12 +37,26 @@ function layoutHTML() {
       })
     );
 }
+
 function postcss() {
   const postcss = require("gulp-postcss");
   return gulp
     .src(envOptions.style.src)
     .pipe(postcss())
     .pipe(gulp.dest(envOptions.style.path))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    );
+}
+
+function vendersCss() {
+  const postcss = require("gulp-postcss");
+  return gulp
+    .src(envOptions.vendersCss.src)
+    .pipe(postcss())
+    .pipe(gulp.dest(envOptions.vendersCss.path))
     .pipe(
       browserSync.reload({
         stream: true,
@@ -69,11 +83,10 @@ function babel() {
     );
 }
 
-function vendorsJs() {
+function vendersJs() {
   return gulp
-    .src(envOptions.vendors.src)
-    .pipe($.concat(envOptions.vendors.concat))
-    .pipe(gulp.dest(envOptions.vendors.path));
+    .src(envOptions.vendersJs.src)
+    .pipe(gulp.dest(envOptions.vendersJs.path));
 }
 
 function browser() {
@@ -115,15 +128,18 @@ exports.build = gulp.series(
   copyFile,
   layoutHTML,
   postcss,
+  vendersCss,
   babel,
-  vendorsJs
+  vendersJs
 );
+
 exports.default = gulp.series(
   clean,
   copyFile,
   layoutHTML,
   postcss,
+  vendersCss,
   babel,
-  vendorsJs,
+  vendersJs,
   gulp.parallel(browser, watch)
 );
