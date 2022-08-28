@@ -15,14 +15,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="stylesheet" href="./assets/style/venders/aos.css" />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
     <header class="fixed top-0 left-0 z-10 w-full bg-maroon py-1 md:relative">
-      <nav
-        class="container flex flex-wrap items-center justify-center md:justify-between"
-      >
+      <nav class="container flex flex-wrap items-center justify-between">
         <input id="menuCheck" type="checkbox" class="hidden flag-1" />
         <a
           href="./index.html"
@@ -102,7 +101,7 @@
     </header>
 
     
-<section class="mt-12 pb-10 pt-6 md:mt-0 md:pt-8 md:pb-20 lg:pt-24 lg:pb-44">
+<section class="mt-12 pb-16 pt-10 md:mt-0 md:pt-20 md:pb-20 lg:pt-24">
   <div class="container">
     <h2
       class="lg:mb-15 mb-6 border-l-8 border-maroon pl-4 text-2xl font-bold md:mb-10 md:text-5xl"
@@ -112,9 +111,9 @@
     <div class="mb-8 grid gap-x-[1.875rem] md:grid-cols-12">
       <div class="md:col-span-6 lg:col-span-5">
         <div class="flex items-center text-sm md:text-base">
-          <label class="mr-3 md:mr-5 lg:text-2xl" for="store">選擇分店</label>
+          <label class="mr-3 md:mr-5 md:text-2xl" for="store">選擇分店</label>
           <select
-            class="flex-auto border-[#CED4DA] focus:border-maroon-dark focus:ring-maroon-dark lg:text-lg"
+            class="flex-auto border-[#CED4DA] text-lg focus:border-maroon-dark focus:ring-maroon-dark"
             id="store"
             name="store"
           >
@@ -124,48 +123,44 @@
         </div>
       </div>
     </div>
-    <div class="grid gap-x-[1.875rem] md:grid-cols-12">
+    <div class="grid gap-x-6 md:grid-cols-12">
       <div class="md:col-span-12 lg:col-span-5">
-        <div
-          class="mb-8 gap-x-[1.875rem] md:grid md:grid-cols-12 md:gap-x-[1.875rem] lg:mb-0 lg:block"
-        >
+        <div class="mb-6 md:grid md:grid-cols-12 md:gap-x-6 lg:mb-0 lg:block">
           <img
-            class="h-[10.25rem] w-full object-cover md:col-span-6 lg:h-56"
+            class="h-56 w-full object-cover md:col-span-6 lg:h-56"
             src="./assets/images/store-1.png"
             alt="store-1-img"
           />
           <div class="border border-[#DEE2E6] md:col-span-6">
             <h3
-              class="border-b border-b-[#00000020] py-2 pl-6 font-bold md:py-3 lg:text-2xl lg:font-normal"
+              class="border-b border-b-[#00000020] py-2 pl-6 odd:text-2xl md:py-3"
             >
               台北中山旗艦店
             </h3>
-            <ul class="grid gap-y-2 py-4 pl-6">
+            <ul class="grid gap-y-2 py-4 px-6">
               <li class="flex">
                 <span
-                  class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+                  class="material-symbols-outlined mr-2 text-2xl leading-none lg:pt-[0.1875rem]"
                 >
                   call
                 </span>
-                <p class="text-sm lg:text-xl">電話：(02)000-1234</p>
+                <p class="text-xl">電話：(02)000-1234</p>
               </li>
               <li class="flex">
                 <span
-                  class="material-symbols-outlined text:sm mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+                  class="material-symbols-outlined mr-2 text-2xl leading-none lg:pt-[0.1875rem]"
                 >
                   schedule
                 </span>
-                <p class="text-sm lg:text-xl">營業時間：10:00-21:00</p>
+                <p class="text-xl">營業時間：10:00-21:00</p>
               </li>
               <li class="flex">
                 <span
-                  class="material-symbols-outlined mr-2 text-xl leading-none lg:pt-[0.1875rem] lg:text-2xl lg:leading-none"
+                  class="material-symbols-outlined mr-2 text-2xl leading-none lg:pt-[0.1875rem]"
                 >
                   location_on
                 </span>
-                <p class="text-sm lg:text-xl">
-                  地址：台北市中山區南京東路25巷2-1號
-                </p>
+                <p class="text-xl">地址：台北市中山區南京東路25巷2-1號</p>
               </li>
             </ul>
           </div>
@@ -188,7 +183,7 @@
 </section>
 
 
-    <footer class="bg-maroon py-6 md:py-8">
+    <footer class="bg-maroon pt-6 pb-6 md:pt-12 md:pb-10 lg:pb-8">
       <div class="container text-white">
         <div
           class="mb-4 flex justify-between border-b border-white pb-6 md:mb-6 md:pb-5 lg:mb-8 lg:pb-6"
@@ -294,7 +289,9 @@
           </ul>
         </div>
         <div class="flex flex-col text-sm md:flex-row md:justify-between">
-          <p class="mb-2">Copyright © 2020 Glasses.All rights reserved.</p>
+          <p class="mb-2 md:mb-0">
+            Copyright © 2020 Glasses.All rights reserved.
+          </p>
           <ul class="grid gap-y-2 md:grid-cols-2 md:gap-x-6 lg:gap-x-12">
             <li>隱私權政策</li>
             <li>服務條款</li>
@@ -302,8 +299,8 @@
         </div>
       </div>
     </footer>
-
-    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/venders/jquery.min.js"></script>
+    <script src="./assets/js/venders/aos.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>

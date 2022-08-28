@@ -15,14 +15,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="stylesheet" href="./assets/style/venders/aos.css" />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
     <header class="fixed top-0 left-0 z-10 w-full bg-maroon py-1 md:relative">
-      <nav
-        class="container flex flex-wrap items-center justify-center md:justify-between"
-      >
+      <nav class="container flex flex-wrap items-center justify-between">
         <input id="menuCheck" type="checkbox" class="hidden flag-1" />
         <a
           href="./index.html"
@@ -103,7 +102,7 @@
 
     
 <section
-  class="mt-12 h-[24.75rem] bg-[url('../images/home-header-sm.png')] bg-cover bg-center bg-no-repeat md:mt-0 md:h-[calc(100vh_-_5rem)] lg:bg-[url('../images/home-header.png')]"
+  class="mt-12 h-[24.75rem] bg-[url('../images/home-header-sm.png')] bg-cover bg-center bg-no-repeat md:mt-0 md:h-[calc(100vh_-_5rem)] lg:bg-[url('../images/home-header.png')] lg:bg-fixed"
 >
   <div
     class="container flex h-[24.75rem] flex-col items-end justify-center md:h-[calc(100vh_-_5rem)]"
@@ -121,12 +120,10 @@
     >
   </div>
 </section>
-<section
-  class="bg-maroon-light pt-8 pb-10 md:pt-10 md:pb-14 lg:pb-20 lg:pt-[3.75rem]"
->
+<section class="bg-maroon-light py-10 md:py-20">
   <div class="container">
     <h2
-      class="mb-5 text-center text-2xl font-bold text-maroon-dark md:mb-8 md:text-5xl lg:mb-10"
+      class="mb-6 text-center text-2xl font-bold text-maroon-dark md:mb-12 md:text-5xl"
     >
       用專業的心，做專業的事
     </h2>
@@ -186,116 +183,79 @@
     </ul>
   </div>
 </section>
-<section
-  class="md:-10 pb-10 pt-8 text-center md:pb-14 lg:pt-[3.75rem] lg:pb-20"
->
+<section class="py-10 text-center md:py-20">
   <div class="container">
-    <h2
-      class="mb-5 text-2xl font-bold text-maroon-dark md:mb-8 md:text-5xl lg:mb-10"
-    >
+    <h2 class="mb-6 text-2xl font-bold text-maroon-dark md:mb-12 md:text-5xl">
       經典系列鏡框
     </h2>
-    <ul class="grid gap-y-2 lg:gap-y-8">
-      <li class="relative md:grid md:grid-cols-12 md:gap-[1.875rem]">
-        <div
-          class="h-[8.375rem] bg-[url('../images/home-section3-1.png')] bg-cover bg-center bg-no-repeat md:col-span-7 md:h-[10.5rem] lg:h-80"
-        ></div>
-        <div
-          class="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center md:static md:col-span-5 md:translate-x-0 md:translate-y-0"
-        >
-          <span
-            class="material-symbols-outlined mr-2 text-maroon md:text-[2.5rem] lg:text-5xl"
-          >
-            auto_awesome
-          </span>
-          <h3 class="text-[1.75rem] font-black italic text-maroon lg:text-5xl">
-            OPTICAL
-          </h3>
-        </div>
+    <ul class="grid gap-6 md:grid-cols-12">
+      <li class="md:col-span-6 md:col-start-4 lg:col-span-4">
+        <img
+          class="mb-2"
+          src="./assets/images/home-section3-1.png"
+          alt="OPTICAL-img"
+        />
+        <h3 class="t text-5xl font-black italic text-maroon">OPTICAL</h3>
       </li>
-      <li class="relative md:grid md:grid-cols-12 md:gap-6 lg:gap-[1.875rem]">
-        <div
-          class="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center md:static md:col-span-5 md:translate-x-0 md:translate-y-0 lg:justify-end"
-        >
-          <span
-            class="material-symbols-outlined mr-2 text-maroon md:text-[2.5rem] lg:text-5xl"
-          >
-            light_mode
-          </span>
-          <h3 class="text-[1.75rem] font-black italic text-maroon lg:text-5xl">
-            SUNGLASSES
-          </h3>
-        </div>
-        <div
-          class="h-[8.375rem] bg-[url('../images/home-section3-2.png')] bg-cover bg-center bg-no-repeat md:order-first md:col-span-7 md:h-[10.5rem] lg:-order-none lg:h-80"
-        ></div>
+      <li class="md:col-span-6 md:col-start-4 lg:col-span-4">
+        <img
+          class="mb-2"
+          src="./assets/images/home-section3-2.png"
+          alt="SUNGLASSES-img"
+        />
+        <h3 class="text-5xl font-black italic text-maroon">SUNGLASSES</h3>
       </li>
-      <li class="relative md:grid md:grid-cols-12 md:gap-6 lg:gap-[1.875rem]">
-        <div
-          class="h-[8.375rem] bg-[url('../images/28.png')] bg-cover bg-center bg-no-repeat md:col-span-7 md:h-[10.5rem] lg:h-80"
-        ></div>
-        <div
-          class="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center md:static md:col-span-5 md:translate-x-0 md:translate-y-0"
-        >
-          <span
-            class="material-symbols-outlined mr-2 text-maroon md:text-[2.5rem] lg:text-5xl"
-          >
-            flash_on
-          </span>
-          <h3 class="text-[1.75rem] font-black italic text-maroon lg:text-5xl">
-            FUNCTIONAL
-          </h3>
-        </div>
+      <li class="md:col-span-6 md:col-start-4 lg:col-span-4">
+        <img
+          class="mb-2"
+          src="./assets/images/home-section3-3.png"
+          alt="FUNCTIONAL-img"
+        />
+        <h3 class="text-5xl font-black italic text-maroon">FUNCTIONAL</h3>
       </li>
     </ul>
   </div>
 </section>
 <section
-  class="bg-[url('../images/index-bg-sm.png')] bg-cover bg-center bg-no-repeat pt-[3.75rem] pb-20 text-center"
+  class="bg-[url('../images/index-bg-sm.png')] bg-cover bg-center bg-no-repeat py-10 text-center md:py-20 lg:bg-fixed"
 >
   <div class="container">
-    <h2 class="mb-10 text-2xl font-bold text-white md:text-5xl">
+    <h2 class="mb-6 text-2xl font-bold text-white md:mb-12 md:text-5xl">
       聯名設計鏡框
     </h2>
-    <div class="grid gap-y-4 md:grid-cols-2 md:gap-x-[1.875rem]">
-      <div class="group relative">
-        <div
-          class="h-[17.375rem] bg-[url('../images/home-section4-1-sm.png')] bg-cover bg-center bg-no-repeat lg:h-[28.4375rem]"
-        ></div>
-        <div
-          class="absolute top-0 left-0 flex h-[17.375rem] w-full items-center justify-center bg-white bg-opacity-30 text-[1.75rem] font-bold text-maroon transition-colors duration-300 hover:bg-opacity-0 lg:h-[28.4375rem] lg:text-5xl"
+    <ul
+      class="grid gap-y-6 lg:grid-cols-2"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
+      <li>
+        <img src="./assets/images/home-section4-1.png" alt="Double_APlus-img" />
+        <h3
+          class="bg-white text-5xl font-bold text-maroon lg:border-r lg:border-[#DEE2E6]"
         >
           Double A+
-        </div>
-      </div>
-      <div class="relative">
-        <div
-          class="h-[17.375rem] bg-[url('../images/home-section4-2.png')] bg-cover bg-center bg-no-repeat lg:h-[28.4375rem]"
-        ></div>
-        <div
-          class="absolute top-0 left-0 flex h-[17.375rem] w-full items-center justify-center bg-white bg-opacity-30 text-[1.75rem] font-bold text-maroon transition-colors duration-300 hover:bg-opacity-0 lg:h-[28.4375rem] lg:text-5xl"
-        >
-          YOUTH
-        </div>
-      </div>
-    </div>
+        </h3>
+      </li>
+      <li>
+        <img src="./assets/images/home-section4-2.png" alt="YOUTH-img" />
+        <h3 class="bg-white text-5xl font-bold text-maroon">YOUTH</h3>
+      </li>
+    </ul>
   </div>
 </section>
-<section class="md:-10 pb-10 pt-8 md:pb-14 lg:pt-[3.75rem] lg:pb-20">
+<section class="py-10 md:py-20">
   <div class="container">
     <h2
-      class="mb-5 text-center text-2xl font-bold text-maroon-dark md:mb-8 md:text-5xl lg:mb-10"
+      class="mb-6 text-center text-2xl font-bold text-maroon-dark md:mb-12 md:text-5xl"
     >
       顧客推薦
     </h2>
-    <ul
-      class="grid gap-y-4 md:grid-cols-2 md:gap-y-8 md:gap-x-[1.875rem] lg:grid-cols-4"
-    >
+    <ul class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
       <li
-        class="flex min-h-[28.75rem] flex-col rounded border border-[#DEE2E6] shadow-[0_2px_6px] shadow-[#00000029]"
+        class="flex min-h-[31.9375rem] flex-col rounded border border-[#DEE2E6] shadow-[0_2px_6px] shadow-[#00000029]"
       >
         <img
-          class="h-64 rounded-t-[calc(0.25rem_-_1px)] object-cover"
+          class="rounded-t-[calc(0.25rem_-_1px)] object-cover"
           src="./assets/images/home-section5-1.png"
           alt="home-section5-1-img"
         />
@@ -308,10 +268,10 @@
         </div>
       </li>
       <li
-        class="flex min-h-[28.75rem] flex-col rounded border border-[#DEE2E6] shadow-[0_2px_6px] shadow-[#00000029]"
+        class="flex min-h-[31.9375rem] flex-col rounded border border-[#DEE2E6] shadow-[0_2px_6px] shadow-[#00000029]"
       >
         <img
-          class="h-64 rounded-t-[calc(0.25rem_-_1px)] object-cover"
+          class="rounded-t-[calc(0.25rem_-_1px)] object-cover"
           src="./assets/images/home-section5-2.png"
           alt="home-section5-2-img"
         />
@@ -324,10 +284,10 @@
         </div>
       </li>
       <li
-        class="flex min-h-[28.75rem] flex-col rounded border border-[#DEE2E6] shadow-[0_2px_6px] shadow-[#00000029]"
+        class="flex min-h-[31.9375rem] flex-col rounded border border-[#DEE2E6] shadow-[0_2px_6px] shadow-[#00000029]"
       >
         <img
-          class="h-64 rounded-t-[calc(0.25rem_-_1px)] object-cover"
+          class="rounded-t-[calc(0.25rem_-_1px)] object-cover"
           src="./assets/images/home-section5-3.png"
           alt="home-section5-3-img"
         />
@@ -340,10 +300,10 @@
         </div>
       </li>
       <li
-        class="flex min-h-[28.75rem] flex-col rounded border border-[#DEE2E6] shadow-[0_2px_6px] shadow-[#00000029]"
+        class="flex min-h-[31.9375rem] flex-col rounded border border-[#DEE2E6] shadow-[0_2px_6px] shadow-[#00000029]"
       >
         <img
-          class="h-64 rounded-t-[calc(0.25rem_-_1px)] object-cover"
+          class="rounded-t-[calc(0.25rem_-_1px)] object-cover"
           src="./assets/images/home-section5-4.png"
           alt="home-section5-4-img"
         />
@@ -358,18 +318,16 @@
     </ul>
   </div>
 </section>
-<section
-  class="bg-maroon-light pt-8 pb-10 md:pt-10 md:pb-14 lg:pb-20 lg:pt-[3.75rem]"
->
+<section class="bg-maroon-light py-10 md:py-20">
   <div class="container">
     <h2
-      class="mb-6 text-center text-2xl font-bold text-maroon-dark md:text-5xl"
+      class="mb-6 text-center text-2xl font-bold text-maroon-dark md:text-5xl lg:mb-12"
     >
       聯絡我們
     </h2>
     <form action="">
-      <div class="grid grid-cols-4 gap-x-[1.875rem] md:grid-cols-12">
-        <div class="col-span-4 md:col-span-8 md:col-start-3">
+      <div class="grid gap-x-6 md:grid-cols-12">
+        <div class="md:col-span-10 md:col-start-2 lg:col-span-6 lg:col-start-4">
           <p class="mb-5 lg:text-xl">
             我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
           </p>
@@ -429,7 +387,7 @@
             >
           </div>
         </div>
-        <div class="col-span-2 col-start-2 md:col-span-4 md:col-start-5">
+        <div class="md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-5">
           <button
             type="button"
             class="w-full bg-maroon py-2 text-sm text-white hover:text-maroon-light-hover focus:border-maroon-dark focus:ring-maroon-dark md:py-[0.625rem] lg:py-4 lg:text-base"
@@ -443,7 +401,7 @@
 </section>
 
 
-    <footer class="bg-maroon py-6 md:py-8">
+    <footer class="bg-maroon pt-6 pb-6 md:pt-12 md:pb-10 lg:pb-8">
       <div class="container text-white">
         <div
           class="mb-4 flex justify-between border-b border-white pb-6 md:mb-6 md:pb-5 lg:mb-8 lg:pb-6"
@@ -549,7 +507,9 @@
           </ul>
         </div>
         <div class="flex flex-col text-sm md:flex-row md:justify-between">
-          <p class="mb-2">Copyright © 2020 Glasses.All rights reserved.</p>
+          <p class="mb-2 md:mb-0">
+            Copyright © 2020 Glasses.All rights reserved.
+          </p>
           <ul class="grid gap-y-2 md:grid-cols-2 md:gap-x-6 lg:gap-x-12">
             <li>隱私權政策</li>
             <li>服務條款</li>
@@ -557,8 +517,8 @@
         </div>
       </div>
     </footer>
-
-    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/venders/jquery.min.js"></script>
+    <script src="./assets/js/venders/aos.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>
