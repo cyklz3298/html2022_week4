@@ -729,8 +729,8 @@ select {
 .h-56 {
   height: 14rem;
 }
-.h-\[13\.1875rem\] {
-  height: 13.1875rem;
+.h-52 {
+  height: 13rem;
 }
 .h-\[10\.25rem\] {
   height: 10.25rem;
@@ -1109,10 +1109,6 @@ select {
           transition-duration: 300ms;
 }
 .flag-1 {}
-.odd\:text-2xl:nth-child(odd) {
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
 .checked\:text-maroon-dark:checked {
   --tw-text-opacity: 1;
   color: rgb(101 3 0 / var(--tw-text-opacity));
@@ -1266,8 +1262,8 @@ select {
     height: 4.5rem;
   }
 
-  .md\:h-\[26\.375rem\] {
-    height: 26.375rem;
+  .md\:h-\[26\.0625rem\] {
+    height: 26.0625rem;
   }
 
   .md\:max-h-fit {
@@ -1352,11 +1348,6 @@ select {
   .md\:py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-  }
-
-  .md\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 
   .md\:pt-12 {
