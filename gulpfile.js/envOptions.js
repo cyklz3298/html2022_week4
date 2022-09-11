@@ -28,7 +28,10 @@ let envOptions = {
     path: `${distPath}/assets/style`,
   },
   vendersCss: {
-    src: [`${nodePath}/aos/dist/aos.css`],
+    src: [
+      `${nodePath}/aos/dist/aos.css`,
+      `${nodePath}/hover.css/css/hover-min.css`,
+    ],
     path: `${distPath}/assets/style/venders`,
   },
   javascript: {
