@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 .hvr-underline-from-center:before {
-  background: white;
-  height: 0.125rem;
-  transition-duration: 0.2s;
-  bottom: 0.4375rem;
+  height: 0;
+}
+@media (min-width: 768px) {
+  .hvr-underline-from-center:before {
+    background: white;
+    height: 0.125rem;
+    transition-duration: 0.2s;
+    bottom: 0.4375rem;
+  }
 }
